@@ -1,0 +1,19 @@
+#logohead {
+    height: 450px;
+    width: 450px;
+    -webkit-animation-name: slidein;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: alternate;
+}
+@keyframes slidein {
+    from {
+        margin-left: 0%;
+        width: 0%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
