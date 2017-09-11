@@ -1,19 +1,59 @@
-#logohead {
-    height: 450px;
-    width: 450px;
-    -webkit-animation-name: slidein;
-    -webkit-animation-duration: 3s;
-    -webkit-animation-iteration-count: 1;
-    -webkit-animation-timing-function: alternate;
+body {
+    background-image: url("/images/bg.png");
 }
-@keyframes slidein {
-    from {
-        margin-left: 0%;
-        width: 0%;
-    }
+#logohead {
+    margin: auto;
+    height: 280px;
+    width: 280px;
+    -webkit-animation-name: pulse;
+    -webkit-animation-duration: 7s;
+    -webkit-animation-iteration-count: 1;
 
-    to {
-        margin-left: 0%;
-        width: 100%;
-    }
+}
+
+@keyframes pulse {
+    0% { width: 40px; height: 40px; }
+    100% { width: 280px; height: 280px; }
+}
+
+.imgfood {
+    height: 100px;
+    width: 100px;
+}
+
+h1 {
+    color: red;
+    font-weight: bold;
+    font-family: Waree;
+    text-decoration: underline;
+    text-decoration-style: double;
+    text-decoration-color: #FAC352;
+    background: -webkit-linear-gradient(#E0964E, #E48D00, yellow, #F67300, #FECD59, white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.dropdown-toggle{
+    color: #758690;
+    font-size: large;
+    font-weight: bold;
+    text-decoration: underline;
+    background: -webkit-linear-gradient(#758690, white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.inputcompt{
+    color: white;
+    text-align: center;
+    width: 80px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    background: -moz-linear-gradient(red, black);
+    font-weight: bold;
+    /*kacsart fait tt décaler en plein écran*/
+    font-family: KacstArt;
 }
