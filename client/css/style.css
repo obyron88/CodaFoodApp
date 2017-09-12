@@ -5,15 +5,7 @@ body {
     margin: auto;
     height: 280px;
     width: 280px;
-    -webkit-animation-name: pulse;
-    -webkit-animation-duration: 7s;
-    -webkit-animation-iteration-count: 1;
 
-}
-
-@keyframes pulse {
-    0% { width: 40px; height: 40px; }
-    100% { width: 280px; height: 280px; }
 }
 
 .imgfood {
@@ -56,4 +48,25 @@ h1 {
     font-weight: bold;
     /*kacsart fait tt décaler en plein écran*/
     font-family: KacstArt;
+}
+.row {
+   margin-left: 30px;
+}
+.commander {
+    color: #EDF210;
+    text-align: center;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 80px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+    background: -moz-linear-gradient(grey, black, darkgrey);
+    font-weight: bold;
+    /*kacsart fait tt décaler en plein écran*/
+    font-family: Dingbats;
+}
+.box{
+    color: white;
 }

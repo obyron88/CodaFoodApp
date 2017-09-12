@@ -1,5 +1,5 @@
-Template.boissons.logos = function() {
-    return _.map(_.range(1, 7), function(idx) {
-        return {url: '/images/bo' + idx + '.png'};
-    });
-};
+Meteor.subscribe("boissons");
+
+Template.boissons.helpers({
+    boissons: function(){return Boissons.find()}
+});

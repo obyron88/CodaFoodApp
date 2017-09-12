@@ -1,13 +1,9 @@
 <template name="layout">
     <form>
-        <!--<input type="submit" name="commander"/>-->
    <div class="container">
         {{>header}}
-        {{>salades}}
-        {{>pizzas}}
-        {{>burgers}}
-        {{>boissons}}
-        {{>desserts}}
+       {{>categories}}
     </div>
+        <input class="commander" type="submit" name="commander" value="Passer ma commande !">
     </form>
 </template>

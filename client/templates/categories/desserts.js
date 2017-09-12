@@ -1,5 +1,5 @@
-Template.desserts.logos = function() {
-    return _.map(_.range(1, 7), function(idx) {
-        return {url: '/images/d' + idx + '.png'};
-    });
-};
+Meteor.subscribe("desserts");
+
+Template.desserts.helpers({
+    desserts: function(){return Desserts.find()}
+});

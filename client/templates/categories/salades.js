@@ -1,5 +1,5 @@
-Template.salades.logos = function() {
-    return _.map(_.range(1, 7), function(idx) {
-        return {url: '/images/sa' + idx + '.png'};
-    });
-};
+Meteor.subscribe("salades");
+
+Template.salades.helpers({
+    salades: function(){return Salades.find()}
+});

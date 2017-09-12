@@ -1,5 +1,5 @@
-Template.burgers.logos = function() {
-    return _.map(_.range(1, 7), function(idx) {
-        return {url: '/images/b' + idx + '.png'};
-    });
-};
+Meteor.subscribe("burgers");
+
+Template.burgers.helpers({
+    burgers: function(){return Burgers.find()}
+});
