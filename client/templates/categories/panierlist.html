@@ -1,0 +1,16 @@
+<template name="panierlist">
+    <div class="container">
+        <div class="row">
+            <div class="box col-xs-11 text-center col-sm-6 text-center col-md-4 text-center">
+                <div class="content">
+                    {{#each panierlist}}
+                     <p> <img class="imgfood" src="/images/{{image}}">{{countitem}} {{name}} = {{itemprice}}€</p>
+                    {{/each}}
+                    <input class="commander" type="submit" name="commander" value="Passer ma commande !">
+                    <a href="{{pathFor route='categories'}}" class="retour">Continuer la commande</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
