@@ -88,3 +88,13 @@ Template.boissons.events({
         });
     },
 });
+
+Template.panierlist.events({
+    'click .supprimer'(event){
+        event.preventDefault();
+
+        Panierlist.remove({
+            _id:this._id
+        })
+    },
+});

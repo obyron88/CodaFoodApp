@@ -5,6 +5,8 @@
                 <div class="content">
                     {{#each panierlist}}
                      <p> <img class="imgfood" src="/images/{{image}}">{{countitem}} {{name}} = {{itemprice}}€</p>
+                    <input class="supprimer" type="button" name="supprimer" value="Supprimer">
+                    <hr>
                     {{/each}}
                     <input class="commander" type="submit" name="commander" value="Passer ma commande !">
                     <a href="{{pathFor route='categories'}}" class="retour">Continuer la commande</a>

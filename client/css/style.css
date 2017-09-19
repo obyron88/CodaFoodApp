@@ -68,15 +68,16 @@ h1:hover{
     margin: auto;
     margin-bottom: 10px;
     margin-top: 10px;
-    text-decoration: none;
     background: -moz-linear-gradient(#E48D00, #FCB528, yellow, yellow, #FCB528, #E48D00);
     font-weight: bold;
     /*kacsart fait tt décaler en plein écran*/
     font-family: Dingbats;
 }
+
 .commander:hover{
-    color: #185A7C;
+    color: mediumpurple;
 }
+
 .box{
     color: white;
 }
@@ -137,4 +138,22 @@ u{
 .panier {
     height: 40px;
     width: 40px;
+}
+.supprimer{
+    color: white;
+    text-align: center;
+    height: 30px;
+    border: brown;
+    border-radius: 5px;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+    background: -moz-linear-gradient(grey, black, red, black, grey);
+    font-weight: bold;
+    /*kacsart fait tt décaler en plein écran*/
+    font-family: Dingbats;
+}
+.supprimer:hover{
+    color: yellow;
 }
