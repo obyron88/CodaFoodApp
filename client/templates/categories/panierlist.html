@@ -4,8 +4,10 @@
             <div class="box col-xs-11 text-center col-sm-6 text-center col-md-4 text-center">
                 <div class="content">
                     {{#each panierlist}}
-                     <p> <img class="imgfood" src="/images/{{image}}">{{countitem}} {{name}} = {{itemprice}}€</p>
+                    <p> <img class="imgfood" src="/images/{{image}}"><b> {{name}}</b> = {{itemprice}}€</p>
                     <input class="supprimer" type="button" name="supprimer" value="Supprimer">
+                    <input class="inputcompt" name="countitem" type="number" min="0" max="99" value="{{countitem}}">
+                    <!--<input class="update" type="button" name="update" value="Modifier le nombre">-->
                     <hr>
                     {{/each}}
                     <input class="commander" type="submit" name="commander" value="Passer ma commande !">

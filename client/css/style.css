@@ -157,3 +157,25 @@ u{
 .supprimer:hover{
     color: yellow;
 }
+.update{
+    color: yellow;
+    text-align: center;
+    height: 30px;
+    border: brown;
+    border-radius: 5px;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+    background: -moz-linear-gradient(brown, #5F0C0C, black, black, #5F0C0C, brown);
+    font-weight: bold;
+    /*kacsart fait tt décaler en plein écran*/
+    font-family: Dingbats;
+}
+.update:hover{
+    color: #FF8B00;
+}
+.compteurpanier{
+    font-weight: bold;
+    color: yellow;
+}

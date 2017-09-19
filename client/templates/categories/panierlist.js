@@ -3,6 +3,7 @@ Meteor.subscribe("panierlist");
 Template.panierlist.helpers({
     panierlist: function(){return Panierlist.find()}
 });
+
 //applique un event sur le template pizzas
 Template.pizzas.events({
     // aplique l'event quand on submit à partir du formulaire de classe formu
@@ -77,7 +78,7 @@ Template.boissons.events({
     'submit .formu'(event) {
         event.preventDefault();
 
-        var inputcount = event.target.countitem.value;
+        var inputcount = parseInt(event.target.countitem.value);
 
         Panierlist.insert({
             countitem:inputcount,
@@ -98,3 +99,27 @@ Template.panierlist.events({
         })
     },
 });
+// Template.panierlist.events({
+//     'click .update'(event){
+//         event.preventDefault();
+//
+//         Panierlist.update(this._id, {
+//         $inc: {countitem: 1},
+//         });
+//     },
+// });
+// Template.panierlist.events({
+//     'click .inputcompt'(event){
+//         event.preventDefault();
+//         var inputcount = event.target.countitem.value;
+//         Panierlist.insert({
+//             _id:this._id,
+//             countitem:inputcount,
+//             itemprice:this.price*inputcount,
+//             name:this.name,
+//             price:this.price
+//
+//
+//         });
+//     },
+// });
