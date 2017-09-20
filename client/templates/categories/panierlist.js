@@ -13,6 +13,7 @@ Template.panierlist.helpers({
     },
 });
 
+
 //applique un event sur le template pizzas
 Template.pizzas.events({
     // aplique l'event quand on submit à partir du formulaire de classe formu
@@ -127,16 +128,4 @@ Template.panierlist.events({
         });
     },
 });
-// Template.panierlist.events({
-//     'submit .passercommande'(event) {
-//         event.preventDefault();
-//
-//         Panierlist.insert({
-//             countitem:inputcount,
-//             itemprice:this.price*inputcount,
-//             name:this.name,
-//             price:this.price,
-//             image:this.image
-//         });
-//     },
-// });
+

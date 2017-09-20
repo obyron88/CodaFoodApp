@@ -3,7 +3,7 @@
         <div class="row">
             <div class="box col-xs-11 text-center col-sm-10 text-center col-md-4 text-center">
                 <div class="content">
-                    <form class="passercommande" >
+                    <form class="passercommande"  method="post">
                     {{#each panierlist}}
                     <p> <img class="imgfood" src="/images/{{image}}"><b>{{name}}</b> = {{itemprice}}€</p>
                         <input class="inputcompt {{_id}}" name="countitem" type="number" min="0" max="99" value="{{countitem}}">
