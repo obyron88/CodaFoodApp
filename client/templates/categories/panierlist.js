@@ -1,7 +1,16 @@
 Meteor.subscribe("panierlist");
 
 Template.panierlist.helpers({
-    panierlist: function(){return Panierlist.find()}
+    panierlist: function(){return Panierlist.find()},
+    // fixe le template prixtotal à 0
+    prixtotal: function () {prixtotal = 0;
+    //cherche dans la collection les fields avec itemprice et parcour le document avec map
+    Panierlist.find({}, {fields:{itemprice:1}}).map(function(doc) {
+        // le prixtotal est égal à tt les itemprice du doc additionné
+            prixtotal += doc.itemprice;
+        });
+        return prixtotal;
+    },
 });
 
 //applique un event sur le template pizzas
@@ -91,35 +100,43 @@ Template.boissons.events({
 });
 
 Template.panierlist.events({
+    // au click sur l'élément avec la classe supprimer
     'click .supprimer'(event){
         event.preventDefault();
-
+// remove dans la collection Panierlist
         Panierlist.remove({
             _id:this._id
         })
     },
 });
+
+Template.panierlist.events({
+    //au click sur la classe inputcompt fait un event
+    'click .inputcompt'(event){
+        event.preventDefault();
+//crée une variable qui va récupérer la value en jquery de la classe id et conc par l'id
+        var inputcount = $("."+this._id+"").val();
+// va update dans la collection Panierlist à partir de l'id toute les infos ci dessous au click sur l'input
+        Panierlist.update(this._id, {
+            countitem:inputcount,
+            itemprice:this.price*inputcount,
+            name:this.name,
+            image:this.image,
+            price:this.price,
+            _id:this._id
+        });
+    },
+});
 // Template.panierlist.events({
-//     'click .update'(event){
+//     'submit .passercommande'(event) {
 //         event.preventDefault();
 //
-//         Panierlist.update(this._id, {
-//         $inc: {countitem: 1},
-//         });
-//     },
-// });
-// Template.panierlist.events({
-//     'click .inputcompt'(event){
-//         event.preventDefault();
-//         var inputcount = event.target.countitem.value;
 //         Panierlist.insert({
-//             _id:this._id,
 //             countitem:inputcount,
 //             itemprice:this.price*inputcount,
 //             name:this.name,
-//             price:this.price
-//
-//
+//             price:this.price,
+//             image:this.image
 //         });
 //     },
 // });

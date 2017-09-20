@@ -1,18 +1,19 @@
 <template name="panierlist">
     <div class="container">
         <div class="row">
-            <div class="box col-xs-11 text-center col-sm-6 text-center col-md-4 text-center">
+            <div class="box col-xs-11 text-center col-sm-10 text-center col-md-4 text-center">
                 <div class="content">
+                    <form class="passercommande" >
                     {{#each panierlist}}
-                    <p> <img class="imgfood" src="/images/{{image}}"><b> {{name}}</b> = {{itemprice}}€</p>
-                    <input class="supprimer" type="button" name="supprimer" value="Supprimer">
-                    <input class="inputcompt" name="countitem" type="number" min="0" max="99" value="{{countitem}}">
-                    <!--<input class="update" type="button" name="update" value="Modifier le nombre">-->
+                    <p> <img class="imgfood" src="/images/{{image}}"><b>{{name}}</b> = {{itemprice}}€</p>
+                        <input class="inputcompt {{_id}}" name="countitem" type="number" min="0" max="99" value="{{countitem}}">
+                        <input class="supprimer" type="button" name="supprimer" value="Supprimer">
                     <hr>
                     {{/each}}
+                    <p>Total de la commande <b>{{prixtotal}} €</b></p>
                     <input class="commander" type="submit" name="commander" value="Passer ma commande !">
                     <a href="{{pathFor route='categories'}}" class="retour">Continuer la commande</a>
-
+                    </form>
                 </div>
             </div>
         </div>
