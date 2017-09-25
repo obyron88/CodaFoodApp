@@ -115,7 +115,7 @@ Template.panierlist.events({
     //au click sur la classe inputcompt fait un event
     'click .inputcompt'(event){
         event.preventDefault();
-//crée une variable qui va récupérer la value en jquery de la classe id et conc par l'id
+//crée une variable qui va récupérer la value en jquery de la classe id et donc par l'id
         var inputcount = $("."+this._id+"").val();
 // va update dans la collection Panierlist à partir de l'id toute les infos ci dessous au click sur l'input
         Panierlist.update(this._id, {

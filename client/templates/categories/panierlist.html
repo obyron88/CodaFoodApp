@@ -3,6 +3,9 @@
         <div class="row">
             <div class="box col-xs-11 text-center col-sm-10 text-center col-md-4 text-center">
                 <div class="content">
+                    <h1>Panier</h1>
+                    {{> loginButtons}}
+                    {{>panier}}
                     <form class="passercommande"  method="post">
                     {{#each panierlist}}
                     <p> <img class="imgfood" src="/images/{{image}}"><b>{{name}}</b> = {{itemprice}}€</p>
@@ -11,7 +14,9 @@
                     <hr>
                     {{/each}}
                     <p>Total de la commande <b>{{prixtotal}} €</b></p>
+                        {{#if currentUser }}
                     <input class="commander" type="submit" name="commander" value="Passer ma commande !">
+                        {{/if}}
                     <a href="{{pathFor route='categories'}}" class="retour">Continuer la commande</a>
                     </form>
                 </div>
