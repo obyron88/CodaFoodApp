@@ -16,6 +16,8 @@
                     <p>Total de la commande <b>{{prixtotal}} €</b></p>
                         {{#if currentUser }}
                     <input class="commander" type="submit" name="commander" value="Passer ma commande !">
+                        {{else}}
+                        <h2>Inscrivez vous ou connectez vous pour passer votre commande !</h2>
                         {{/if}}
                     <a href="{{pathFor route='categories'}}" class="retour">Continuer la commande</a>
                     </form>

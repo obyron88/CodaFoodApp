@@ -179,3 +179,9 @@ u{
     font-weight: bold;
     color: yellow;
 }
+h2{
+    font-weight: bold;
+    background: -webkit-linear-gradient(grey, white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
