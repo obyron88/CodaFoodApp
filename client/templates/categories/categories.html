@@ -4,10 +4,14 @@
         <div class="row">
             <div class="box col-xs-11 text-center col-sm-6 text-center col-md-4 text-center">
                 <div class="content">
+                    {{#if isInRole 'admin'}}
+                    <h2>Welcome admin !</h2>
+                    {{/if}}
                     {{#each categories}}
                     <a class="acateg" href="/categories/{{name}}"><h1>{{name}}</h1></a>
                     <a class="acateg" href="/categories/{{name}}"><img class="imgfood" src="/images/{{image}}"></a>
                     {{/each}}
+
                 </div>
             </div>
         </div>

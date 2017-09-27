@@ -1,6 +1,6 @@
 Meteor.subscribe("panierlist");
 Meteor.subscribe('commandesubmitted');
-
+// transfère les données du local au serveur
     Template.panierlist.events({
         'submit .passercommande'() {
 

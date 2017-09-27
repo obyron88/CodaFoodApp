@@ -15,7 +15,11 @@
                     <input class="inputcompt" name="countitem" type="number" min="0" max="99" value="0">
                     <p>{{description}}</p>
                         <input class="commander" type="submit" name="commander" value="Valider !">
+                        {{#if isInRole 'admin'}}
+                        <input class="supprpizza" type="button" name="suprpizza" value="Supprimer">
+                        <a class="updateadmin" href="/update/{{_id}}"><input class="updatepizza" type="button" name="updatepizza" value="Update"></a>
 
+                        {{/if}}
                     </form>
                     {{/each}}
                     <a href="{{pathFor route='categories'}}" class="retour">Retour</a>

@@ -13,6 +13,9 @@
                     <img class="imgfood" src="/images/{{image}}">
                     <input class="inputcompt" name="countitem" type="number" min="0" max="99" value="0">
                     <input class="commander" type="submit" name="commander" value="Valider !">
+                        {{#if isInRole 'admin'}}
+                        <input class="supprdesserts" type="button" name="suprpizza" value="Supprimer">
+                        {{/if}}
                     </form>
                         {{/each}}
 

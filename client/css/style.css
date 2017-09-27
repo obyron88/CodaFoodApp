@@ -185,3 +185,111 @@ h2{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+.supprpizza{
+    color: white;
+    text-align: center;
+    height: 30px;
+    border: brown;
+    border-radius: 5px;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+    background: -moz-linear-gradient(grey, black, red, black, grey);
+    font-weight: bold;
+    /*kacsart fait tt décaler en plein écran*/
+    font-family: Dingbats;
+}
+.supprburgers{
+    color: white;
+    text-align: center;
+    height: 30px;
+    border: brown;
+    border-radius: 5px;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+    background: -moz-linear-gradient(grey, black, red, black, grey);
+    font-weight: bold;
+    /*kacsart fait tt décaler en plein écran*/
+    font-family: Dingbats;
+}
+.supprboissons{
+    color: white;
+    text-align: center;
+    height: 30px;
+    border: brown;
+    border-radius: 5px;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+    background: -moz-linear-gradient(grey, black, red, black, grey);
+    font-weight: bold;
+    /*kacsart fait tt décaler en plein écran*/
+    font-family: Dingbats;
+}
+.supprsalades{
+    color: white;
+    text-align: center;
+    height: 30px;
+    border: brown;
+    border-radius: 5px;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+    background: -moz-linear-gradient(grey, black, red, black, grey);
+    font-weight: bold;
+    /*kacsart fait tt décaler en plein écran*/
+    font-family: Dingbats;
+}
+.supprdesserts{
+    color: white;
+    text-align: center;
+    height: 30px;
+    border: brown;
+    border-radius: 5px;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+    background: -moz-linear-gradient(grey, black, red, black, grey);
+    font-weight: bold;
+    /*kacsart fait tt décaler en plein écran*/
+    font-family: Dingbats;
+}
+.updatepizza{
+    color: white;
+    text-align: center;
+    height: 30px;
+    border: brown;
+    border-radius: 5px;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+    background: -moz-linear-gradient(deepskyblue, blue, black, blue, deepskyblue);
+    font-weight: bold;
+    /*kacsart fait tt décaler en plein écran*/
+    font-family: Dingbats;
+}
+.updatepizzasub{
+    color: white;
+    text-align: center;
+    height: 30px;
+    border: brown;
+    border-radius: 5px;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+    background: -moz-linear-gradient(deepskyblue, blue, black, blue, deepskyblue);
+    font-weight: bold;
+    /*kacsart fait tt décaler en plein écran*/
+    font-family: Dingbats;
+}
+.namepizza{
+    background-color: black;
+}

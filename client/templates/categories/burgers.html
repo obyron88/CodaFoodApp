@@ -14,6 +14,9 @@
                     <input class="inputcompt" name="countitem" type="number" min="0" max="99" value="0">
                     <p>{{description}}</p>
                     <input class="commander" type="submit" name="commander" value="Valider !">
+                        {{#if isInRole 'admin'}}
+                        <input class="supprburgers" type="button" name="suprpizza" value="Supprimer">
+                        {{/if}}
                     </form>
                         {{/each}}
 
