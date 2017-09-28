@@ -16,6 +16,7 @@
                     <input class="commander" type="submit" name="commander" value="Valider !">
                         {{#if isInRole 'admin'}}
                         <input class="supprburgers" type="button" name="suprpizza" value="Supprimer">
+                        <a class="updateadmin" href="/update/{{_id}}"><input class="updatepizza" type="button" name="updatepizza" value="Update"></a>
                         {{/if}}
                     </form>
                         {{/each}}

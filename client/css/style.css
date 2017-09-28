@@ -275,7 +275,7 @@ h2{
     /*kacsart fait tt décaler en plein écran*/
     font-family: Dingbats;
 }
-.updatepizzasub{
+.updatesub{
     color: white;
     text-align: center;
     height: 30px;
@@ -290,6 +290,15 @@ h2{
     /*kacsart fait tt décaler en plein écran*/
     font-family: Dingbats;
 }
-.namepizza{
+.nameup{
+    background-color: black;
+}
+.priceup{
+    background-color: black;
+}
+.descriptionup{
+    background-color: black;
+}
+.imageup{
     background-color: black;
 }
