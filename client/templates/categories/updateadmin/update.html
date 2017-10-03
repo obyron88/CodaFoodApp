@@ -6,11 +6,13 @@
                     <form class="updateform" method="post">
 
                        <p>Name : </p> <input class="nameup" name="nameup" value="{{name}}">
-                        <p>Price : </p><input class="priceup" name="priceup"  value="">
-                        <p>Image : </p><input class="imageup" name="imageup"  value="">
-                        <p>Description : </p><input class="descriptionup" name="descriptionup"  value="">
+                        <p>Price : </p><input class="priceup" name="priceup"  value="{{price}}">
+                        <p>Image : </p><input class="imageup" name="imageup"  value="{{image}}">
+                        <p>Description : </p><textarea class="descriptionup" type="texte" name="descriptionup"  value="{{description}}"></textarea>
 
                         <input class="updatesub" type="submit" name="updatesub" value="Update !">
+                        <a href="{{pathFor route='categories'}}" class="retour">Retour</a>
+
                     </form>
                     </div>
             </div>
